@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Website wow</title>
+        <link rel="stylesheet" href="loginstyle.css"/> 
+    </head>
+    <body>
+            
+        <div class="navbar">
+            
+                <img id="logo" width="50px" height="50px" src=" logo.png" alt="logo shown"/>
+            <div id='rlink'>
+            <a id='rlink' href="index.html">Register</a>
+</div>
+</div>
+        
+        <center>
+                <h1>Login form</h1><br><br>
+                <div class='userForm' id="userForm">
+                                
+                         <button id='cross' onclick="show()">&times;</button>
+                            <img width='100px' height='100px' src="personlogo.png " alt="">
+                        <div>
+                            <form action="index.html">
+                                <input class='textBox' type="text" placeholder="Email" id='txtEmail' /><br><br><br>
+                                <input class='textBox' type="text" placeholder="Password" id="txtPassword"/><br><br><br>
+                                <input class='btnSubmit' type="submit" value="Login" />
+                            </form>
+                           
+                        </div>
+                        
+                </div>
+                <div id="btn"><button  class='textbox' id='btnSubmit' value="Login" onclick="back()">Login</button></div>
+        </center>
+    </body>
+    <script>
+               
+              var btn=document.getElementById('btn');
+              var ele=document.getElementById("userForm");
+              btn.style.display="none";
+              function show(){
+                 btn.style.display="block";
+                 ele.style.display="none";
+                }
+                function back(){
+                 ele.style.display="block";
+                 btn.style.display="none";
+                }
+        </script>   
+</html>
+		

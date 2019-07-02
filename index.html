@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+    <head>
+		<title>Login Page</title>
+        <link rel="stylesheet" href="registerstyle.css" />
+        
+    </head>
+    <body>
+		<div class="navbar">
+			<img id="logo" width="50px" height="50px" src="logo.png" alt="logo shown"/>
+			<a id=rlink href="login.html">Login</a>	
+        </div>
+        <center>
+            <h1>Register page</h1>
+
+		
+            
+			<div class='account-info' id="ai">
+
+                    <form action="login.html">
+				<table id='acc-info-table'>
+					<tr>
+
+                       <td><label for="txtName">Name</label></td>
+                        <td><input class='text-box' id="txtName" type="text" placeholder="Name"/></td>
+                        <td><label for="txtEmail">Email</label></td>
+						<td><input class='text-box' id="txtEmail" type="text" placeholder="Email"/></td>
+					</tr>
+					<tr>
+                        <td><label for="txtPassword">Password</label></td>
+                        <td><input class='text-box' id="txtPassword" type="text" placeholder="Password"/></td>
+                        <td><label for="txtConfirmPassword">Confirm password</label></td>
+						<td><input class='text-box' id="txtConfirmPassword" type="text" placeholder="ConfirmPassword"/></td>
+					</tr>
+					
+                </table>
+                </form>
+                <input type="submit" id='btnSubmit' class='textbox'  value="Next" onclick="next()"/>
+            </div>
+            <div id="pi">
+			<div class='personal-info' >
+		       <form>
+				<table id='pers-info-table'>
+					<tr>
+                        <td><label for="txtDob">DateOfBirth<label></td>
+                        <td><input class='text-box' id="txtDob" type="text" placeholder="Name"/></td>
+                        <td><label for="txtAddress">Address</label></td>
+                        <td><input class='text-box' id="txtAddress" type="text" placeholder="Address"/></td>
+                        <td><label for="txtcontact">Contact</label></td>
+						<td><input class='text-box' id="txtContact" type="text" placeholder="Contact"/></td>
+					</tr>
+					<tr>
+                        <td><label for="txtFatherName">FatherNAme</label></td>
+                         <td><input class='text-box' id="txtFatherName" type="text" placeholder="Father Name"/></td>
+                        <td><label for="txtCompanyName">CompanyName</td>
+                        <td><input class='text-box' id="txtCompanyName" type="text" placeholder="Company Name"/></td>
+                        <td><label for="txtPlace">Place</label></td>
+						<td><input class='text-box'id="txtPlace" type="text" placeholder="Place"/></td>
+					</tr>
+                    
+                </table>
+                </form>
+                <input id='btnSubmit' class='textbox' type="submit" value="Back" onclick="back()"/>
+                </div>
+                <input id='btnSubmit' class='textbox' type="submit" value="submit" />
+			</div>
+           
+        </br>
+        
+        </center>
+		
+        
+    </body>
+    <script type="text/javascript">
+        
+        var pi=document.getElementById("pi");
+        var ai=document.getElementById("ai");
+        pi.style.display="none";
+       
+        function next(){
+            ai.style.display="none";
+            pi.style.display="block";
+            
+        }
+        function back(){
+            pi.style.display="none";
+            ai.style.display="block";
+        }
+   
+     </script>
+</html>
